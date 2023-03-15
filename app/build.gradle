@@ -10,6 +10,12 @@ android {
         versionName '.3'
     }
 
+      lint {
+
+          baseline = file("lint-baseline.xml")
+
+      }
+
     buildTypes {
         release {
             minifyEnabled false
