@@ -1,5 +1,6 @@
 package just.trust.me;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.net.http.SslError;
 import android.net.http.X509TrustManagerExtensions;
@@ -56,6 +57,7 @@ import static de.robv.android.xposed.XposedHelpers.getObjectField;
 import static de.robv.android.xposed.XposedHelpers.newInstance;
 import static de.robv.android.xposed.XposedHelpers.setObjectField;
 
+@SuppressLint("NewApi")
 public class Main implements IXposedHookLoadPackage {
 
     private static final String TAG = "JustTrustMe";
